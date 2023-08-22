@@ -21,12 +21,13 @@ export default function Resultado() {
           width: '200px'
         }}
       />
-      <Image
+      <img
         src={`/api/og?text=${inputText}`}
-        alt="Next.js Logo"
-        width={1080 / 3}
-        height={1920 / 3}
-        priority
+        alt="OG IMAGE"
+        style={{
+          width: '360px',
+          height: '640px'
+        }}
       />
     </div>
   )
