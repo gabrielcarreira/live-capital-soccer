@@ -6,9 +6,6 @@ export default function Resultado() {
   const [inputDate, setInputDate] = useState('')
   const [inputResult, setInputResult] = useState('')
 
-  const handleInputChange = (event) => {
-    setInputText(event.target.value)
-  }
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <input

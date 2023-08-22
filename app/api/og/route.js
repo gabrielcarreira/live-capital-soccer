@@ -19,7 +19,7 @@ export async function GET(request) {
   const fontMontData = await fontMontResponse.arrayBuffer()
 
   const imageResponse = await fetch(
-    new URL('../../../assets/result-background.png', import.meta.url)
+    new URL('../../../assets/result-background.jpg', import.meta.url)
   )
 
   const imageData = await imageResponse.arrayBuffer()
