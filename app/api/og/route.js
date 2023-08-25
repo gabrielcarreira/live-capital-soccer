@@ -19,10 +19,7 @@ export async function GET(request) {
   const fontMontData = await fontMontResponse.arrayBuffer()
 
   const imageResponse = await fetch(
-    new URL(
-      'https://res.cloudinary.com/dvyhc5pp5/image/upload/v1692938022/result-background_abtcws.jpg',
-      import.meta.url
-    )
+    new URL('../../../assets/result-background.jpg', import.meta.url)
   )
 
   const imageData = await imageResponse.arrayBuffer()
@@ -30,7 +27,7 @@ export async function GET(request) {
   return new ImageResponse(
     (
       <div style={{ display: 'flex' }}>
-        <img src="https://res.cloudinary.com/dvyhc5pp5/image/upload/v1692938022/result-background_abtcws.jpg" />
+        <img src={imageData} />
         <div
           style={{
             position: 'absolute',
