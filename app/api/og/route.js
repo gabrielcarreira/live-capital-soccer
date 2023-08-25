@@ -19,7 +19,7 @@ export async function GET(request) {
   const fontMontData = await fontMontResponse.arrayBuffer()
 
   const imageResponse = await fetch(
-    new URL('../../../assets/result-background.jpg', import.meta.url)
+    new URL('https://res.cloudinary.com/dvyhc5pp5/image/upload/v1692938022/result-background_abtcws.jpg', import.meta.url)
   )
 
   const imageData = await imageResponse.arrayBuffer()
